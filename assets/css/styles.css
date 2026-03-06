@@ -274,7 +274,7 @@ section {
 
 .hero__subhead {
   font-size: 1.2rem;
-  color: #4a5568;
+  color: var(--navy);
   margin-bottom: 24px;
   max-width: 600px;
 }
@@ -291,16 +291,51 @@ section {
 
 .hero__ctas {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
 }
 
-@media (min-width: 480px) {
-  .hero__ctas {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2;
+  background: var(--gold);
+  color: var(--navy);
+  border: 2px solid transparent;
+  transition: background var(--transition);
+}
+
+.btn-primary:hover {
+  background: var(--gold-dark);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2;
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+  transition: background var(--transition), color var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--navy);
+  color: var(--white);
 }
 
 @media (min-width: 768px) {
