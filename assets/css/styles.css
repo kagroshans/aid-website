@@ -163,8 +163,9 @@ section {
 }
 
 .navbar__logo img {
-  height: 50px;
+  height: 70px;
   width: auto;
+  filter: brightness(1.15);
 }
 
 .navbar__links {
@@ -346,6 +347,10 @@ section {
 .pain-card:hover {
   border-color: var(--gold);
   box-shadow: 0 2px 12px rgba(0, 31, 62, 0.07);
+}
+
+.pain-card__icon {
+  margin-bottom: 12px;
 }
 
 .pain-card p {
