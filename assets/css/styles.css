@@ -257,8 +257,8 @@ section {
    Hero
    ============================================================ */
 .hero {
-  background-color: var(--off-white);
-  color: var(--navy);
+  background-color: var(--navy);
+  color: var(--white);
   padding: 80px 24px 96px;
 }
 
@@ -269,12 +269,12 @@ section {
 
 .hero__headline {
   margin-bottom: 20px;
-  color: var(--navy);
+  color: var(--white);
 }
 
 .hero__subhead {
   font-size: 1.2rem;
-  color: var(--navy);
+  color: var(--white);
   margin-bottom: 24px;
   max-width: 600px;
 }
