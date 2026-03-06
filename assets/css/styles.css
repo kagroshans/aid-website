@@ -145,11 +145,13 @@ section {
    Navbar
    ============================================================ */
 .navbar {
-  background: var(--navy);
+  background-color: var(--navy);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0' stroke='%23ffffff' stroke-width='0.4' stroke-opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 2px solid var(--gold);
 }
 
 .navbar__inner {
@@ -175,7 +177,9 @@ section {
   top: 70px;
   left: 0;
   right: 0;
-  background: var(--navy);
+  background-color: var(--navy);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0' stroke='%23ffffff' stroke-width='0.4' stroke-opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
   padding: 16px 24px 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -253,7 +257,9 @@ section {
    Hero
    ============================================================ */
 .hero {
-  background: var(--navy);
+  background-color: var(--navy);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0' stroke='%23ffffff' stroke-width='0.4' stroke-opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
   color: var(--white);
   padding: 80px 24px 96px;
 }
@@ -307,6 +313,33 @@ section {
   .hero__subhead {
     font-size: 1.3rem;
   }
+}
+
+/* ============================================================
+   Gold Divider
+   ============================================================ */
+.gold-divider {
+  border: none;
+  height: 2px;
+  width: 80px;
+  background: var(--gold);
+  margin: 0 auto;
+}
+
+/* ============================================================
+   Section h2 Gold Underline
+   ============================================================ */
+.pain-points h2::after,
+.offer h2::after,
+.credibility h2::after,
+.steps h2::after,
+.newsletter h2::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 12px;
 }
 
 /* ============================================================
@@ -509,7 +542,9 @@ section {
    Newsletter / Checklist
    ============================================================ */
 .newsletter {
-  background: var(--navy);
+  background-color: var(--navy);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0' stroke='%23ffffff' stroke-width='0.4' stroke-opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
   color: var(--white);
 }
 
@@ -533,7 +568,9 @@ section {
    Footer
    ============================================================ */
 .footer {
-  background: var(--navy);
+  background-color: var(--navy);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0' stroke='%23ffffff' stroke-width='0.4' stroke-opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
   color: var(--white);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 56px 0 32px;
