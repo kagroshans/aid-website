@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="{{ '/' | relative_url }}" class="navbar__logo">
+      <img src="{{ '/assets/images/aid-logo-dark.png' | relative_url }}" alt="Alternative Investing Doctor" height="50" width="auto">
+    </a>
+
+    <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="navbar__links">
+      <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ '/about.html' | relative_url }}"{% if page.url contains 'about' %} class="active"{% endif %}>About</a></li>
+      <li><a href="{{ '/blog.html' | relative_url }}"{% if page.url contains 'blog' or page.layout == 'post' %} class="active"{% endif %}>Blog</a></li>
+      <li><a href="{{ '/newsletter.html' | relative_url }}"{% if page.url contains 'newsletter' %} class="active"{% endif %}>Newsletter</a></li>
+    </ul>
+  </div>
+</nav>

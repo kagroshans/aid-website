@@ -1,0 +1,17 @@
+title: Alternative Investing Doctor
+description: Physician perspectives on mortgage note investing
+url: "https://alternativeinvestingdoctor.com"
+author: Dr. Keith G.
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-paginate
+
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
